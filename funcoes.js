@@ -45,7 +45,7 @@ function adicionar(cachorro){
 //função vacinar
 const vacinar =(id, nomeDaVacina, dataDaVacina) => {
     let cachorroVacinado = buscar(id),
-        if(cachorroVacinado.id>0){
+        if(cachorroVacinado.id){
             cachorroVacinado.vacinas.push({
                 nome: nomeDaVacina, data: dataDaVacina});
             salvar(){
